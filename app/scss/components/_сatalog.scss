@@ -1,0 +1,425 @@
+.catalog__main {
+  display: flex;
+  gap: 24px;
+}
+
+.categories {
+  background-color: #fff;
+  border-radius: 12px;
+  min-width: 249px;
+  border: 1px solid $border-color;
+  height: 100%;
+}
+
+.categories__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 24px;
+}
+
+.categories__header-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: $title-black;
+}
+
+.categories__header-btn {
+  width: 36px;
+  height: 36px;
+  background-color: $secondary-blue;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  background-image: url("../../images/ico/blueplus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.categories__body-item {
+  font-size: 14px;
+  color: $primary-text-color;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-top: 1px solid $border-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-image: url("../../images/ico/groupdot.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 23px;
+  }
+}
+
+.categories__settings {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.categories__body-item--active {
+  background-color: $background;
+}
+
+.categories__body-title {
+  padding-left: 19px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+// ============================ categories-list ============================
+
+.categories-list {
+  max-width: 850px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid $border-color;
+
+  display: none;
+}
+
+.categories-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.categories-list__header-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: $title-black;
+  margin-right: 10px;
+}
+
+.categories-list__header-btn {
+  background-image: url("../../images/ico/whiteplus.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position-x: 25px;
+  background-position-y: center;
+  text-align: center;
+}
+
+.categories-list__body-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 8px 24px 8px 45px;
+  border-top: 1px solid $border-color;
+  &:hover {
+    background-color: $background;
+  }
+  &::before {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    left: 24px;
+    background-image: url("../../images/ico/groupdot.svg");
+  }
+  &:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+.categories-list__item-img {
+  width: 52px;
+  height: 52px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 14px;
+}
+
+.categories-list__item-title {
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  color: $primary-text-color;
+  margin-left: 0;
+  margin-right: auto;
+  min-width: 165px;
+  margin-right: 15px;
+}
+
+.categories-list__item-weight {
+  margin: auto;
+  padding-right: 15px;
+}
+.categories-list__item-cost {
+  text-align: right;
+  min-width: 60px;
+}
+
+.categories-list__item-cost,
+.categories-list__item-weight {
+  width: 100%;
+  font-size: 13px;
+  color: $secondary-text-color;
+  white-space: nowrap;
+}
+
+.categories-list__settings {
+  width: 10px;
+  min-width: 5px;
+  margin-left: 37px;
+  margin-right: 0;
+}
+.categories-list__settings-inner {
+  right: 4px;
+  top: 2px;
+  left: auto;
+  z-index: 20;
+}
+
+// ============================ new product popup ============================
+.new-product__popup-content {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.new-product__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px 0 18px;
+}
+
+.new-product__body {
+  padding: 26px 24px;
+  border-bottom: 1px solid $border-color;
+}
+
+.new-product__product,
+.new-product__desc,
+.new-product__image,
+.new-product__price,
+.new-product__weight {
+  margin-bottom: 20px;
+}
+
+.new-product__product-title,
+.new-product__desc-title,
+.new-product__image-title,
+.new-product__price-title,
+.new-product__weight-title,
+.new-product__option-title {
+  margin-bottom: 8px;
+}
+
+.new-product__desc-input {
+  resize: none;
+}
+
+.new-product__weight-input,
+.new-product__price-input {
+  max-width: 160px;
+}
+
+.new-product__price-input {
+  background-image: url("../../images/ico/ruble.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 10px);
+}
+
+.new-product__option-subtitle {
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: $secondary-text-color;
+}
+
+.new-product__option-btn {
+  font-size: 12px;
+  color: $primary-blue;
+  padding: 12px 20px;
+  background-color: $secondary-blue;
+  display: inline-block;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url("../images/ico/blueplus.svg");
+    background-size: 9px 9px;
+    margin-right: 10px;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.new-product__image-input {
+  display: none;
+}
+
+.new-product__image-lable {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px dashed $primary-blue;
+  background-image: url("../../images/ico/blueplus.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.new-product__footer {
+  padding: 24px;
+}
+
+.new-product__add-btn {
+  width: 100%;
+  padding: 17px 24px;
+}
+
+// ============================ new categories popup ============================
+
+.new-categories__form {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-categories__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px 0 18px;
+}
+
+.new-categories__body {
+  padding: 26px 24px;
+  border-bottom: 1px solid $border-color;
+}
+
+.new-categories__category-title {
+  margin-bottom: 8px;
+}
+
+.new-categories__footer {
+  padding: 24px;
+}
+
+.new-categories__add-btn {
+  width: 100%;
+  padding: 17px 24px;
+}
+
+// ============================== media ====================================
+
+@media screen and (max-width: 1024px) {
+  .catalog__main {
+    flex-direction: column;
+  }
+
+  .categories__settings-inner {
+    left: auto;
+    right: 4px;
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories__header {
+    padding: 10px;
+  }
+  .categories__body-item {
+    padding: 10px;
+    &::before {
+      left: 10px;
+    }
+  }
+
+  .categories-list__header {
+    padding: 10px;
+  }
+
+  .categories-list__body-item {
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100px;
+    padding-left: 20px;
+    &::before {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .categories-list__item-img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+  }
+
+  .categories-list__item-title,
+  .categories-list__item-cost,
+  .categories-list__item-weight {
+    text-align: right;
+    margin-left: 90px;
+  }
+
+  .categories-list__item-title {
+    min-width: 0;
+    margin-right: 0;
+  }
+  .categories-list__item-weight {
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .categories-list__settings {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 1;
+  }
+
+  .new-product__popup-content {
+    margin-top: 150px;
+  }
+}

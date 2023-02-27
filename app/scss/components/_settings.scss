@@ -1,0 +1,86 @@
+.delivery,
+.payment {
+  max-width: 621px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.delivery__header,
+.payment__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+.delivery__title,
+.payment__header {
+  font-size: 20px;
+  color: $title-black;
+  font-weight: 600;
+}
+
+.delivery__add-btn,
+.payment__add-btn {
+  background-image: url("../../images/ico/whiteplus.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position-x: 25px;
+  background-position-y: center;
+}
+
+.delivery__item,
+.payment__item {
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $border-color;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background-image: url("../../images/ico/groupdot.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.delivery__item-title,
+.payment__item-title {
+  display: inline;
+  font-size: 14px;
+  color: $primary-text-color;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.delivery__settings,
+.payment__settings {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.delivery__settings-inner,
+.payment__settings-inner {
+  right: 4px;
+  top: 3px;
+  left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .delivery__header,
+  .payment__header {
+    padding: 12px 10px;
+  }
+  .delivery__item,
+  .payment__item {
+    padding: 22px 10px;
+  }
+
+  .delivery__add-btn,
+  .payment__add-btn {
+    padding: 17px 17px 17px 30px;
+    background-position-x: 12px;
+  }
+}

@@ -1,0 +1,147 @@
+.orders-table__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-table {
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table__head {
+  background-color: #fafafb;
+  color: #8492a6;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.orders-table__head-item {
+  padding: 18px 0px 18px 45px;
+  &:first-child {
+    border-radius: 16px 0 0 0;
+  }
+  &:last-child {
+    border-radius: 0 16px 0 0;
+  }
+}
+
+.orders-table__body {
+  font-size: 14px;
+  color: $primary-text-color;
+}
+
+.orders-table__body-row {
+  background-color: #fff;
+  border-top: 1px solid $border-color;
+}
+
+.orders-table__body-item {
+  padding: 16px 0px 16px 45px;
+  min-width: 120px;
+  &:last-child {
+    padding-right: 25px;
+  }
+  &:nth-child(4) {
+    min-width: 200px;
+  }
+  &:nth-child(6) {
+    min-width: 170px;
+  }
+}
+
+.orders-table__status {
+  padding-left: 22px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.orders-table__status--new::before {
+  background-color: #a6b7d4;
+}
+
+.orders-table__status--done::before {
+  background-color: #66cb9f;
+}
+
+.orders-table__status--inwork::before {
+  background-color: #ffdc60;
+}
+
+.orders-table__status--cancel::before {
+  background-color: #f2777a;
+}
+
+.orders-table__telegram {
+  max-width: 200px;
+}
+
+.orders-table__payment {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.orders-table__payment--off {
+  background-color: #ebeff6;
+  color: #718096;
+}
+
+.orders-table__payment--on {
+  background-color: #deffee;
+  color: #66cb9f;
+}
+
+.orders-table__dialog {
+  color: #718096;
+  font-size: 12px;
+  padding: 6px 10px 6px 30px;
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  position: relative;
+  white-space: nowrap;
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../../images/ico/chat.svg");
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+  }
+}
+
+.orders__pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .orders-table__head-item {
+    padding: 18px 0px 18px 20px;
+  }
+  .orders-table__body-item {
+    padding: 16px 0px 16px 20px;
+    &:nth-child(1) {
+      min-width: 30px;
+    }
+  }
+}
