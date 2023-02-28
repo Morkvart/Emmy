@@ -183,7 +183,7 @@ body {
   width: 5px;
   height: 12px;
   background-color: transparent;
-  background-image: url("../../images/ico/columndot.svg");
+  background-image: url("../images/ico/columndot.svg");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: right;
@@ -378,7 +378,7 @@ body {
   content: "";
   width: 13px;
   height: 7px;
-  background-image: url("../../images/ico/navarrow.svg");
+  background-image: url("../images/ico/navarrow.svg");
   margin-right: 10px;
   margin-left: auto;
   -webkit-transition: -webkit-transform 1s;
@@ -539,7 +539,7 @@ body {
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  background-image: url("../../images/ico/blueplus.svg");
+  background-image: url("../images/ico/blueplus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
@@ -571,7 +571,7 @@ body {
   display: block;
   width: 7px;
   height: 12px;
-  background-image: url("../../images/ico/groupdot.svg");
+  background-image: url("../images/ico/groupdot.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -629,7 +629,7 @@ body {
 }
 
 .categories-list__header-btn {
-  background-image: url("../../images/ico/whiteplus.svg");
+  background-image: url("../images/ico/whiteplus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -661,7 +661,7 @@ body {
   height: 12px;
   position: absolute;
   left: 24px;
-  background-image: url("../../images/ico/groupdot.svg");
+  background-image: url("../images/ico/groupdot.svg");
 }
 .categories-list__body-item:last-child {
   border-radius: 0 0 12px 12px;
@@ -778,7 +778,7 @@ body {
 }
 
 .new-product__price-input {
-  background-image: url("../../images/ico/ruble.svg");
+  background-image: url("../images/ico/ruble.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -825,7 +825,7 @@ body {
   border-radius: 8px;
   display: inline-block;
   border: 1px dashed #4c6fff;
-  background-image: url("../../images/ico/blueplus.svg");
+  background-image: url("../images/ico/blueplus.svg");
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1089,7 +1089,7 @@ body {
   display: block;
   width: 12px;
   height: 12px;
-  background-image: url("../../images/ico/chat.svg");
+  background-image: url("../images/ico/chat.svg");
   position: absolute;
   top: 50%;
   left: 9px;
@@ -1144,7 +1144,7 @@ body {
 
 .delivery__add-btn,
 .payment__add-btn {
-  background-image: url("../../images/ico/whiteplus.svg");
+  background-image: url("../images/ico/whiteplus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -1168,7 +1168,7 @@ body {
   display: inline-block;
   width: 7px;
   height: 12px;
-  background-image: url("../../images/ico/groupdot.svg");
+  background-image: url("../images/ico/groupdot.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
